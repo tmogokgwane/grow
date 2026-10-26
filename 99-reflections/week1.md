@@ -6,7 +6,7 @@ This week, I worked through the Kubernetes fundamentals lab where I deployed a b
 
 ## ✅ What I Learned
 
--Pods are single units; deployments manage replicas and rollout strategies 
+- Pods are single units; deployments manage replicas and rollout strategies 
 - Security Contexts improve workload isolation
 - 
 - 
