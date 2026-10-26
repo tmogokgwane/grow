@@ -6,8 +6,8 @@ This week, I worked through the Kubernetes fundamentals lab where I deployed a b
 
 ## ✅ What I Learned
 
-- 
-- 
+-Pods are single units; deployments manage replicas and rollout strategies 
+- Security Contexts improve workload isolation
 - 
 - 
 
@@ -16,8 +16,8 @@ This week, I worked through the Kubernetes fundamentals lab where I deployed a b
 
 ## ❓ What Was Challenging
 
-- 
-- 
+- Understanding why the Pod didn't start when missing the image tag
+- the difference between ```kubectl get pod``` and ```kubectl get deployment```
 - 
 
 ---
@@ -25,9 +25,15 @@ This week, I worked through the Kubernetes fundamentals lab where I deployed a b
 ## 🧪 Commands I Practiced
 
 ```bash
+kubectl apply -f nginx-pod.yaml
 
+kubectl apply -f nginx-deployment.yaml
 
+kubectl get pods
 
+kubectl describe deployment nginx-deployment
+
+kubectl scale deployment nginx-deployment --replicas=3
 
 ```
 
@@ -35,7 +41,7 @@ This week, I worked through the Kubernetes fundamentals lab where I deployed a b
 
 ## 🔐 Security Improvements I Made
 
-- 
+- Set ```runASNonRoot``` and disabled privilege escalation
 - 
 
 ---
